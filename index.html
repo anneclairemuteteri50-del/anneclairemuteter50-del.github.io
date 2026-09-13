@@ -25,34 +25,81 @@
             margin-top: 30px;
         }
         .btn:hover { background: #c73650; }
+        .product-grid{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+            gap:30px;
+            margin:40px auto;
+            max-width:1200px;
+        }
+        .product-card{
+            background:rgba(255,255,255,0.08);
+            border-radius:16px;
+            padding:20px;
+        }
+        .product-card img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+            border-radius:12px;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to Anne Tat's Luxury Perfume Shop</h1>
+    <h1>Welcome to Anne Tat's Luxury Shop</h1>
     <p>This is my free GitHub Pages website.</p>
-
     <h2>About Me</h2>
     <p>Hello, I'm Anne Claire. I am an international Electronic Commerce student.</p>
-
     <h2>Contact Information</h2>
     <p>Email: anneclairemuteteri50@gmail.com</p>
     <p>Phone: +8618583360795</p>
 
     <h2>Our Full Product List</h2>
-    <p>Laverne Sense Pink Perfume</p>
-    <p>J'dor Golden Perfume</p>
-    <p>Lattafa Ra'ed Gold Perfume</p>
-    <p>Lattafa Fakhar For Women Perfume</p>
-    <p>Dolce & Gabbana Light Blue Perfume</p>
-    <p>Long Lasting Floral Body Mist</p>
-    <p>Premium Body Lotion</p>
-    <p>Nivea Nourishing Body Lotion</p>
-    <p>Cedar & Rose Body Wash</p>
-    <p>Vanilla Scented Shower Gel</p>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="lattafa ra'ed gold.jpg" alt="Lattafa Ra'ed Gold">
+            <h3>Lattafa Ra'ed Gold</h3>
+            <p>Oriental warm gold‑scented unisex perfume</p>
+        </div>
+        <div class="product-card">
+            <img src="sense laverne pink.jpg" alt="Laverne Sense Pink">
+            <h3>Laverne Sense Pink</h3>
+            <p>Sweet feminine everyday perfume</p>
+        </div>
+        <div class="product-card">
+            <img src="j'dor golden perfum.jpg" alt="J'dor Golden Perfume">
+            <h3>J'dor Golden Perfume</h3>
+            <p>Elegant golden‑floral fragrance</p>
+        </div>
+        <div class="product-card">
+            <img src="dolce and gabbana light blue.jpg" alt="Dolce & Gabbana Light Blue">
+            <h3>Dolce & Gabbana Light Blue</h3>
+            <p>Famous fresh citrus unisex perfume</p>
+        </div>
+        <div class="product-card">
+            <img src="cedar rose.jpg" alt="Cedar & Rose Body Wash">
+            <h3>Cedar & Rose Body Wash</h3>
+            <p>Woody‑floral premium shower gel</p>
+        </div>
+        <div class="product-card">
+            <img src="lux body rose wash.jpg" alt="Lux Black Body Rose Wash">
+            <h3>Lux Black Body Rose Wash</h3>
+            <p>Rich rose‑scented luxury body wash</p>
+        </div>
+        <div class="product-card">
+            <img src="five cereals body lotion.jpg" alt="Five Cereals 72H fragrance body lotion">
+            <h3>Five Cereals 72H Fragrance Body Lotion</h3>
+            <p>Long‑lasting moisturising scented body lotion</p>
+        </div>
+        <div class="product-card">
+            <img src="nivea nourishment body lotion.jpg" alt="Nivea Intensive Nourishment Body Lotion">
+            <h3>Nivea Intensive Nourishment Body Lotion</h3>
+            <p>Deep nourishing daily‑use body lotion</p>
+        </div>
+    </div>
 
     <h2>Shop Now</h2>
     <p>Click below to visit our full store and place your order:</p>
     <a href="https://0v961e-mp.myshopify.com" class="btn">Visit Our Shopify Store</a>
-
 </body>
 </html>
